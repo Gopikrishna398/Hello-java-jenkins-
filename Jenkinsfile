@@ -15,7 +15,7 @@ pipeline {
                 if exist build rmdir /s /q build
                 mkdir build
                 javac -d build src\\Hello.java
-                jar cfe hello.jar Hello -C build .
+                "%JAVA_HOME%\\bin\\jar.exe" cfe hello.jar Hello -C build .
                 '''
             }
         }
