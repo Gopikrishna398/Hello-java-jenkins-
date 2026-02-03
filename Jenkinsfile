@@ -15,7 +15,7 @@ pipeline {
                 if exist build rmdir /s /q build
                 mkdir build
                 javac -d build src\\Hello.java
-                "%JAVA_HOME%\\bin\\jar.exe" cfe hello.jar Hello -C build .
+                "C:\\Users\Gopi Krishna\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin\jar.exe" cfe hello.jar Hello -C build .
                 '''
             }
         }
